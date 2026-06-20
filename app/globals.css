@@ -1,13 +1,17 @@
-:root {
-  color-scheme: light dark;
-}
-
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: system-ui, sans-serif;
-  padding: 2rem;
+  font-family: "DM Sans", sans-serif;
+  background: #000000;
+  color: #ffffff;
+  line-height: 1.618;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
 }
