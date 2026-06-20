@@ -16,13 +16,15 @@
     "vite": "^8.0.16"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.42.1",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@vitejs/plugin-react": "^6.0.2",
     "@vitejs/plugin-rsc": "^0.5.27",
     "react-server-dom-webpack": "^19.2.7",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.103.0"
   },
   "type": "module"
 }
