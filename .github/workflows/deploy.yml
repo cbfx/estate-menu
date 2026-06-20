@@ -23,6 +23,8 @@ jobs:
 
       - name: Build
         run: pnpm build
+        env:
+          BUILD_ID: ${{ github.sha }}
 
       - name: Deploy to Cloudflare Workers
         uses: cloudflare/wrangler-action@v3
