@@ -1,17 +1,20 @@
 import styles from "../menu.module.css";
-import type { Row, RowKind } from "../menu-data";
-
-const rowClass: Record<RowKind, string> = {
-  espresso: styles.espressoItem,
-  addon: styles.addon,
-  item: styles.item,
-};
+import type { Row } from "../menu-data";
 
 export default function MenuRow({ price, name, kind }: Row) {
+  if (kind === "espresso") {
+    return (
+      <div className={styles.espressoItem}>
+        <span className={styles.name}>{name}</span>
+        <span className={styles.price}>{price}</span>
+      </div>
+    );
+  }
+
   return (
-    <div className={rowClass[kind]}>
-      <span className={styles.price}>{price}</span>
+    <div className={kind === "addon" ? styles.addon : styles.item}>
       <span className={styles.name}>{name}</span>
+      <span className={styles.price}>{price}</span>
     </div>
   );
 }
