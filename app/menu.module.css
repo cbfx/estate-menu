@@ -96,6 +96,7 @@
 .item .price {
   font-weight: 500;
   margin-right: 20px;
+  width: 60px;
   color: #ffffff;
   opacity: 0.6;
   line-height: 1.3;
