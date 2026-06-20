@@ -32,7 +32,8 @@
 
 .espressoItem .price {
   font-size: 0.3em;
-  vertical-align: super;
+  position: relative;
+  top: -1.7em;
   letter-spacing: 0;
   margin-left: 0.12em;
   color: #ffffff;
