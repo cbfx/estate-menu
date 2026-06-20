@@ -16,7 +16,7 @@ export const espresso: Row[] = [
 // Right column — three sections.
 export const sections: Row[][] = [
   [
-    { price: "8.00", name: "Espresso OF", kind: "item" },
+    { price: "8.00", name: "Espresso old fashioned", kind: "item" },
     { price: "4.50", name: "Cold brew shandy", kind: "item" },
     { price: "4.50", name: "Matcha lemonade", kind: "item" },
     { price: "4.50", name: "Cold brew cola", kind: "item" },
