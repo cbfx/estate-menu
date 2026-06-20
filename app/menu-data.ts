@@ -2,15 +2,15 @@ export type RowKind = "espresso" | "addon" | "item";
 
 export type Row = { price: string; name: string; kind: RowKind };
 
-// Left column — preserves the source ordering: 5 drinks, the +0.50 addon, then Americano.
+// Left column — all 6 espresso drinks, then the +0.50 flavor add-on last.
 export const espresso: Row[] = [
   { price: "3.25", name: "Espresso", kind: "espresso" },
   { price: "3.50", name: "Macchiato", kind: "espresso" },
   { price: "3.75", name: "Cortado", kind: "espresso" },
   { price: "4.00", name: "Cappuccino", kind: "espresso" },
   { price: "4.50", name: "Latte", kind: "espresso" },
-  { price: "+0.50", name: "Honey lavender, mocha, vanilla, kentucky smoke", kind: "addon" },
   { price: "3.50", name: "Americano", kind: "espresso" },
+  { price: "+0.50", name: "Honey lavender, mocha, vanilla, kentucky smoke", kind: "addon" },
 ];
 
 // Right column — three sections.
