@@ -1,8 +1,24 @@
 import styles from "../menu.module.css";
-import { espresso, sections } from "../menu-data";
+import { espresso, sections, type Row } from "../menu-data";
 import MenuRow from "./MenuRow";
 
+function Section({ rows }: { rows: Row[] }) {
+  return (
+    <div className={styles.section}>
+      <div className={styles.items}>
+        {rows.map((row, j) => (
+          <MenuRow key={j} {...row} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default function Menu() {
+  // Espresso in column 1; the section groups split across columns 2 and 3.
+  const middle = sections.slice(0, 1);
+  const right = sections.slice(1);
+
   return (
     <div className={styles.container}>
       <div className={styles.primaryColumn}>
@@ -13,14 +29,13 @@ export default function Menu() {
         </div>
       </div>
       <div className={styles.secondaryColumn}>
-        {sections.map((rows, i) => (
-          <div key={i} className={styles.section}>
-            <div className={styles.items}>
-              {rows.map((row, j) => (
-                <MenuRow key={j} {...row} />
-              ))}
-            </div>
-          </div>
+        {middle.map((rows, i) => (
+          <Section key={i} rows={rows} />
+        ))}
+      </div>
+      <div className={styles.secondaryColumn}>
+        {right.map((rows, i) => (
+          <Section key={i} rows={rows} />
         ))}
       </div>
     </div>

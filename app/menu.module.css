@@ -2,8 +2,8 @@
   width: 100%;
   max-width: 1400px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 64px;
   align-items: start;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .espressoItem {
-  font-size: clamp(40px, 5.5vw, 76px);
+  font-size: clamp(40px, 5vw, 68px);
   font-weight: 400;
   letter-spacing: -0.02em;
   line-height: 1.1;
