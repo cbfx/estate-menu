@@ -42,3 +42,14 @@ next-env.d.ts
 /dist/
 .vinext/
 .wrangler/
+
+# vinext / vite build output
+dist/
+
+# wrangler
+.dev.vars
+
+# env
+.env
+.env.*
+!.env.example

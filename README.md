@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# estate-menu
 
-## Getting Started
+A [vinext](https://github.com/cloudflare/vinext) (Vite-based Next.js) App Router app that deploys to **Cloudflare Workers** via GitHub Actions on merge to `main`.
 
-First, run the development server:
+The application itself is a placeholder — this repo is the deploy-ready scaffold.
+
+## Local development
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
+pnpm dev      # vinext dev — http://localhost:3000
+pnpm build    # vinext build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+CI (`.github/workflows/deploy.yml`) runs on every push to `main`, inside the GitHub **production** Environment, and deploys to Cloudflare Workers. It runs `pnpm build` and then `wrangler deploy` (the build step regenerates the redirected Wrangler config that the deploy consumes).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Making CI go green — required secrets
 
-## Learn More
+The pipeline is intentionally wired to **fail at the Cloudflare auth step until two secrets exist**. Add them to the GitHub **production** environment (Settings → Environments → New environment → `production` → Add secret):
 
-To learn more about Next.js, take a look at the following resources:
+| Secret | Where to get it |
+| --- | --- |
+| `CLOUDFLARE_API_TOKEN` | Cloudflare dashboard → My Profile → API Tokens → Create Token → "Edit Cloudflare Workers" template |
+| `CLOUDFLARE_ACCOUNT_ID` | Cloudflare dashboard → Workers & Pages → right sidebar Account ID |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Until both are set, the deploy run will check out, install, build, and then fail on the deploy step — which confirms the pipeline is correctly assembled.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## First push
 
-## Deploy on Vercel
+```bash
+git remote add origin <your-github-repo-url>
+git push -u origin main
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Then open the repo's **Actions** tab to watch the run fail at deploy (expected), add the two secrets above, and re-run to deploy for real.
