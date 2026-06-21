@@ -1,0 +1,36 @@
+name: Refresh prices
+
+on:
+  schedule:
+    - cron: "0 11 * * *"   # 5am CST / 6am CDT — before the 7am open
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Fetch Square prices
+        run: node scripts/fetch-square-prices.mjs
+        env:
+          SQUARE_ACCESS_TOKEN: ${{ secrets.SQUARE_ACCESS_TOKEN }}
+
+      - name: Commit if changed
+        run: |
+          if [ -n "$(git status --porcelain app/square-snapshot.json)" ]; then
+            git config user.name "prices-bot"
+            git config user.email "actions@users.noreply.github.com"
+            git add app/square-snapshot.json
+            git commit -m "chore: refresh Square prices"
+            git push
+          else
+            echo "No price changes."
+          fi
