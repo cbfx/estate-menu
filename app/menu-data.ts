@@ -30,6 +30,16 @@ export const sections: Row[][] = [
     { price: "5.00", name: "Lime espresso tonic", kind: "item", squareId: "HI5NY4YZMS6ZGIK4PZSW4FY4" },
   ],
   [
+    { price: "2.75", name: "Drip", kind: "item", squareId: "KQNUEL4V55RK747DEPTZAJPD" },
+    { price: "4.00", name: "Cold brew", kind: "item", squareId: "WROIDGIGYQUCDVJ22B4SXG2F" },
+  ],
+  [
+    // Milk options — Breve / Almond / Oat are modifiers (shown "extra"); chocolate milk is a real SKU.
+    { price: "extra", name: "Breve", kind: "item" },
+    { price: "extra", name: "Almond or oat", kind: "item" },
+    { price: "3.00", name: "Chocolate milk", kind: "item", squareId: "BYPB7OQJTQTDCDVHQCO25N6V" },
+  ],
+  [
     { price: "4.50", name: "Chai", kind: "item", squareId: "PJI7N6AXP32IUT6WRDQGZP7U" },
     { price: "5.25", name: "Matcha latte", kind: "item", squareId: "WKIP5KJQJMSJ5CCVD5PTMAD6" },
   ],
