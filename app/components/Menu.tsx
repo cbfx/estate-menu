@@ -16,9 +16,9 @@ function Section({ rows }: { rows: Row[] }) {
 }
 
 export default function Menu() {
-  // Col 1: espresso. Col 2 (middle): specialty + filter + milk. Col 3 (right): the rest.
-  const middle = sections.slice(0, 3);
-  const right = sections.slice(3);
+  // Col 1: espresso + filter. Col 2 (middle): specialty + milk. Col 3 (right): the rest.
+  const middle = sections.slice(0, 2);
+  const right = sections.slice(2);
 
   return (
     <div className={styles.container}>
