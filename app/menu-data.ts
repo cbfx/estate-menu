@@ -37,4 +37,9 @@ export const sections: Row[][] = [
     // Grouped tea line — all teas are 4.50 in POS; static (one line, many items).
     { price: "4.50", name: "Hibiscus, chamomile, chai, green, black", kind: "item" },
   ],
+  [
+    // Cold fridge drinks — real Square SKUs (Topo Chico → Seltzer, Mexican coke → Boylan Cane Cola).
+    { price: "4.00", name: "Seltzer", kind: "item", squareId: "UCBB73L7UTRQHYJF5TLWLHQM" },
+    { price: "4.00", name: "Boylan Cane Cola", kind: "item", squareId: "QHVIX3AIAUCM7NEFA3MAQWRF" },
+  ],
 ];
