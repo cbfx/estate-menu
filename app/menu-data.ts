@@ -7,7 +7,7 @@ export type Row = {
   squareId?: string;
 };
 
-// Left column — 6 espresso drinks, then filter (Drip, Cold brew) under Americano.
+// Left column — 6 espresso drinks, then milk options + flavors below.
 // Prices reconciled to Square POS; squareId drives live updates.
 export const espresso: Row[] = [
   { price: "3.50", name: "Espresso", kind: "espresso", squareId: "MPSXICQUEEZSJHNU4TYBFUTM" },
@@ -16,11 +16,13 @@ export const espresso: Row[] = [
   { price: "4.25", name: "Cappuccino", kind: "espresso", squareId: "PLEYAEQ2GEDFPHIDXJHWEZQU" },
   { price: "4.75", name: "Latte", kind: "espresso", squareId: "CXJH4O25WCPJAHLGM6R74G5S" },
   { price: "4.00", name: "Americano", kind: "espresso", squareId: "QWCMPLSRYO55YWXHIZN6MRV2" },
-  { price: "2.75", name: "Drip", kind: "item", squareId: "KQNUEL4V55RK747DEPTZAJPD" },
-  { price: "4.00", name: "Cold brew", kind: "item", squareId: "WROIDGIGYQUCDVJ22B4SXG2F" },
+  // Milk options + flavors — Square modifiers.
+  { price: "+0.50", name: "Breve", kind: "item", squareId: "6QCOWWNBM7OWVF6N2XQHFU4W" },
+  { price: "+0.75", name: "Almond or oat", kind: "item", squareId: "WSP2S4SPBSDBFJYLAF2W6FIR" },
+  { price: "+0.50", name: "Honey lavender, mocha, vanilla, kentucky smoke", kind: "item", squareId: "HRNS3NH3KDBKEGF6XKQQFYTS" },
 ];
 
-// Right-of-espresso columns, split across the middle and right columns in Menu.tsx.
+// Middle column = first 3 groups; right column = the rest (see Menu.tsx).
 export const sections: Row[][] = [
   [
     { price: "8.00", name: "Espresso old fashioned", kind: "item", squareId: "RXKLK5TTWB37KJPYIIDCGWZS" },
@@ -31,10 +33,8 @@ export const sections: Row[][] = [
     { price: "3.00", name: "Chocolate milk", kind: "item", squareId: "BYPB7OQJTQTDCDVHQCO25N6V" },
   ],
   [
-    // Milk options + flavors — all Square modifiers.
-    { price: "+0.50", name: "Breve", kind: "item", squareId: "6QCOWWNBM7OWVF6N2XQHFU4W" },
-    { price: "+0.75", name: "Almond or oat", kind: "item", squareId: "WSP2S4SPBSDBFJYLAF2W6FIR" },
-    { price: "+0.50", name: "Honey lavender, mocha, vanilla, kentucky smoke", kind: "item", squareId: "HRNS3NH3KDBKEGF6XKQQFYTS" },
+    { price: "2.75", name: "Drip", kind: "item", squareId: "KQNUEL4V55RK747DEPTZAJPD" },
+    { price: "4.00", name: "Cold brew", kind: "item", squareId: "WROIDGIGYQUCDVJ22B4SXG2F" },
   ],
   [
     { price: "4.50", name: "Chai", kind: "item", squareId: "PJI7N6AXP32IUT6WRDQGZP7U" },
