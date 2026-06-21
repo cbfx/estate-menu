@@ -17,7 +17,7 @@ export const espresso: Row[] = [
   { price: "4.75", name: "Latte", kind: "espresso", squareId: "CXJH4O25WCPJAHLGM6R74G5S" },
   { price: "4.00", name: "Americano", kind: "espresso", squareId: "QWCMPLSRYO55YWXHIZN6MRV2" },
   // Modifier (not a catalog item) — shown as "extra", no price.
-  { price: "extra", name: "Honey lavender, mocha, vanilla, kentucky smoke", kind: "addon" },
+  { price: "+0.50", name: "Honey lavender, mocha, vanilla, kentucky smoke", kind: "addon", squareId: "HRNS3NH3KDBKEGF6XKQQFYTS" },
 ];
 
 // Right column — three sections.
@@ -35,8 +35,8 @@ export const sections: Row[][] = [
   ],
   [
     // Milk options — Breve / Almond / Oat are modifiers (shown "extra"); chocolate milk is a real SKU.
-    { price: "extra", name: "Breve", kind: "item" },
-    { price: "extra", name: "Almond or oat", kind: "item" },
+    { price: "+0.50", name: "Breve", kind: "item", squareId: "6QCOWWNBM7OWVF6N2XQHFU4W" },
+    { price: "+0.75", name: "Almond or oat", kind: "item", squareId: "WSP2S4SPBSDBFJYLAF2W6FIR" },
     { price: "3.00", name: "Chocolate milk", kind: "item", squareId: "BYPB7OQJTQTDCDVHQCO25N6V" },
   ],
   [
