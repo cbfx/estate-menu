@@ -1,6 +1,11 @@
 export type RowKind = "espresso" | "addon" | "item";
 
-export type Row = { price: string; name: string; kind: RowKind };
+export type Row = {
+  price: string;
+  name: string;
+  kind: RowKind;
+  squareId?: string;
+};
 
 // Left column — all 6 espresso drinks, then the +0.50 flavor add-on last.
 export const espresso: Row[] = [
