@@ -28,19 +28,17 @@ export const sections: Row[][] = [
     { price: "5.25", name: "Matcha lemonade", kind: "item", squareId: "IRPDAOC6OE36M6WUCXOYTRNW" },
     { price: "5.00", name: "Cold brew cola", kind: "item", squareId: "22RPTA4U7KAEYT3ABXWF2KKH" },
     { price: "5.00", name: "Lime espresso tonic", kind: "item", squareId: "HI5NY4YZMS6ZGIK4PZSW4FY4" },
+    { price: "3.00", name: "Chocolate milk", kind: "item", squareId: "BYPB7OQJTQTDCDVHQCO25N6V" },
   ],
   [
-    // Milk options + flavors — Breve/Almond/Oat/flavors are Square modifiers; chocolate milk is a real SKU.
+    // Milk options + flavors — all Square modifiers.
     { price: "+0.50", name: "Breve", kind: "item", squareId: "6QCOWWNBM7OWVF6N2XQHFU4W" },
     { price: "+0.75", name: "Almond or oat", kind: "item", squareId: "WSP2S4SPBSDBFJYLAF2W6FIR" },
     { price: "+0.50", name: "Honey lavender, mocha, vanilla, kentucky smoke", kind: "item", squareId: "HRNS3NH3KDBKEGF6XKQQFYTS" },
-    { price: "3.00", name: "Chocolate milk", kind: "item", squareId: "BYPB7OQJTQTDCDVHQCO25N6V" },
   ],
   [
     { price: "4.50", name: "Chai", kind: "item", squareId: "PJI7N6AXP32IUT6WRDQGZP7U" },
     { price: "5.25", name: "Matcha latte", kind: "item", squareId: "WKIP5KJQJMSJ5CCVD5PTMAD6" },
-  ],
-  [
     // Grouped tea line — all teas are 4.50 in POS; mapped to Hibiscus as the representative.
     { price: "4.50", name: "Hibiscus, chamomile, chai, green, black", kind: "item", squareId: "4BD326RIBBU65IG6JC2IBGBK" },
   ],
