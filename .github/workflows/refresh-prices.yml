@@ -2,7 +2,7 @@ name: Refresh prices
 
 on:
   schedule:
-    - cron: "0 11 * * *"   # 5am CST / 6am CDT — before the 7am open
+    - cron: "*/20 11-16 * * *"   # every 20 min, ~5–11am CST (6am–noon CDT)
   workflow_dispatch: {}
 
 permissions:
