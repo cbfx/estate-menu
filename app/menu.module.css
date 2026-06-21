@@ -18,6 +18,11 @@
   gap: 8px;
 }
 
+/* Spacer between the espresso drinks and the filter rows (Drip/Cold brew) below. */
+.espressoItem + .item {
+  margin-top: 28px;
+}
+
 .espressoItem {
   font-size: clamp(40px, 5vw, 68px);
   font-weight: 400;
