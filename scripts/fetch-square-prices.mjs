@@ -14,7 +14,7 @@ async function fetchAllObjects(token) {
   let cursor = "";
   do {
     const url = new URL("/v2/catalog/list", baseUrl());
-    url.searchParams.set("types", "ITEM,ITEM_VARIATION");
+    url.searchParams.set("types", "ITEM,ITEM_VARIATION,MODIFIER_LIST,MODIFIER");
     if (cursor) url.searchParams.set("cursor", cursor);
 
     const res = await fetch(url, { headers: { Authorization: `Bearer ${token}` } });

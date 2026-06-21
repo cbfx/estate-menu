@@ -43,3 +43,33 @@ test("buildSnapshot output keys are sorted for stable diffs", () => {
   ];
   assert.deepEqual(Object.keys(buildSnapshot(objects)), ["A", "B"]);
 });
+
+test("buildSnapshot includes modifiers, keyed by id, priced with a + prefix", () => {
+  const objects = [
+    { type: "MODIFIER", id: "MOD1", modifier_data: { name: "Breve", price_money: { amount: 50, currency: "USD" } } },
+    { type: "MODIFIER", id: "MOD2", modifier_data: { name: "Oat", price_money: { amount: 75, currency: "USD" } } },
+  ];
+  assert.deepEqual(buildSnapshot(objects), {
+    MOD1: { label: "Breve", price: "+0.50", amountCents: 50, currency: "USD" },
+    MOD2: { label: "Oat", price: "+0.75", amountCents: 75, currency: "USD" },
+  });
+});
+
+test("buildSnapshot skips modifiers without a price (e.g. text modifiers)", () => {
+  const objects = [
+    { type: "MODIFIER", id: "MOD3", modifier_data: { name: "No charge" } },
+  ];
+  assert.deepEqual(buildSnapshot(objects), {});
+});
+
+test("items and modifiers coexist in one flat map (ITEM itself yields no entry)", () => {
+  const objects = [
+    { type: "ITEM", id: "I", item_data: { name: "Latte" } },
+    { type: "ITEM_VARIATION", id: "V", item_variation_data: { item_id: "I", price_money: { amount: 475, currency: "USD" } } },
+    { type: "MODIFIER", id: "M", modifier_data: { name: "Vanilla", price_money: { amount: 50, currency: "USD" } } },
+  ];
+  assert.deepEqual(buildSnapshot(objects), {
+    M: { label: "Vanilla", price: "+0.50", amountCents: 50, currency: "USD" },
+    V: { label: "Latte", price: "4.75", amountCents: 475, currency: "USD" },
+  });
+});
