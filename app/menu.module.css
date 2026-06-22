@@ -143,7 +143,12 @@
   width: 100%;
   height: 360px;
   object-fit: contain;
-  object-position: left top;
+  object-position: center top;
+}
+
+/* The "We're serving…" caption (first line) is larger than the wifi line. */
+.featured > .featuredTitle:first-child {
+  font-size: 42px; /* 26 × phi */
 }
 
 /* Projector / XGA (1024×768) and similar: step the whole scale down a notch,
@@ -174,6 +179,9 @@
   }
   .featuredTitle {
     font-size: 21px;
+  }
+  .featured > .featuredTitle:first-child {
+    font-size: 34px; /* 21 × phi at projector scale */
   }
 }
 
