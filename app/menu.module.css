@@ -93,6 +93,12 @@
   padding-left: 12px;
 }
 
+/* Push Americano (the drink after the modifier block) down 2 grid units so its
+   bottom aligns with the bottom of the middle column. */
+.modifier + .espressoItem {
+  margin-top: 72.8px;
+}
+
 .item .name,
 .modifier .name {
   color: #ffffff;
@@ -132,6 +138,9 @@
   }
   .section {
     margin-bottom: 29.4px; /* 1 grid unit at projector scale */
+  }
+  .modifier + .espressoItem {
+    margin-top: 58.8px; /* 2 grid units at projector scale */
   }
   .addon {
     font-size: 21px;
