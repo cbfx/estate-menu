@@ -9,7 +9,7 @@ export default function Featured() {
 
   return (
     <div className={styles.featured}>
-      <div className={styles.featuredTitle}>Today we are serving {data.name}</div>
+      <div className={styles.featuredTitle}>We&apos;re serving {data.name} on espresso today.</div>
       <img src={data.imageUrl} alt={data.name ?? "Espresso of the day"} />
     </div>
   );
