@@ -1,4 +1,4 @@
-export type RowKind = "espresso" | "addon" | "item";
+export type RowKind = "espresso" | "addon" | "item" | "header";
 
 export type Row = {
   price: string;
@@ -15,17 +15,18 @@ export const espresso: Row[] = [
   { price: "4.00", name: "Cortado", kind: "espresso", squareId: "Q5OFTFKUYPS4ADXCC4B4SITR" },
   { price: "4.25", name: "Cappuccino", kind: "espresso", squareId: "PLEYAEQ2GEDFPHIDXJHWEZQU" },
   { price: "4.75", name: "Latte", kind: "espresso", squareId: "CXJH4O25WCPJAHLGM6R74G5S" },
-  { price: "4.00", name: "Americano", kind: "espresso", squareId: "QWCMPLSRYO55YWXHIZN6MRV2" },
-  // Size + milk options + flavors — Square modifiers.
+  // Latte modifiers — hug Latte with no gap.
   { price: "+2.00", name: "Large", kind: "item", squareId: "7DS4ACACAUT7U54WOWMYSF2L" },
   { price: "+0.50", name: "Breve", kind: "item", squareId: "6QCOWWNBM7OWVF6N2XQHFU4W" },
   { price: "+0.75", name: "Almond or oat", kind: "item", squareId: "WSP2S4SPBSDBFJYLAF2W6FIR" },
   { price: "+0.50", name: "Honey lavender, mocha, vanilla, kentucky smoke", kind: "item", squareId: "HRNS3NH3KDBKEGF6XKQQFYTS" },
+  { price: "4.00", name: "Americano", kind: "espresso", squareId: "QWCMPLSRYO55YWXHIZN6MRV2" },
 ];
 
 // Middle column = first 3 groups; right column = the rest (see Menu.tsx).
 export const sections: Row[][] = [
   [
+    { price: "", name: "Specialty drinks", kind: "header" },
     { price: "8.00", name: "Espresso old fashioned", kind: "item", squareId: "RXKLK5TTWB37KJPYIIDCGWZS" },
     { price: "5.00", name: "Cold brew shandy", kind: "item", squareId: "K3IZJC7PWLXFZ3GA72SVARMU" },
     { price: "5.25", name: "Matcha lemonade", kind: "item", squareId: "IRPDAOC6OE36M6WUCXOYTRNW" },
@@ -38,6 +39,7 @@ export const sections: Row[][] = [
     { price: "4.00", name: "Cold brew", kind: "item", squareId: "WROIDGIGYQUCDVJ22B4SXG2F" },
   ],
   [
+    { price: "", name: "Not coffee", kind: "header" },
     { price: "4.50", name: "Chai", kind: "item", squareId: "PJI7N6AXP32IUT6WRDQGZP7U" },
     { price: "5.25", name: "Matcha latte", kind: "item", squareId: "WKIP5KJQJMSJ5CCVD5PTMAD6" },
     // Grouped tea line — all teas are 4.50 in POS; mapped to Hibiscus as the representative.

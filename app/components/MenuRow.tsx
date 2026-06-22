@@ -2,6 +2,10 @@ import styles from "../menu.module.css";
 import type { Row } from "../menu-data";
 
 export default function MenuRow({ price, name, kind }: Row) {
+  if (kind === "header") {
+    return <div className={styles.header}>{name}</div>;
+  }
+
   if (kind === "espresso") {
     return (
       <div className={styles.espressoItem}>
