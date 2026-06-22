@@ -16,10 +16,6 @@
   flex-direction: column;
 }
 
-/* Big drinks: 8px apart. Latte's .modifier rows hug the drink above (no margin). */
-.espressoSection .espressoItem:not(:first-child) {
-  margin-top: 8px;
-}
 
 /* A general add-on group after a drink (e.g. Breve under Americano) gets a spacer. */
 .espressoItem + .item {
@@ -30,12 +26,12 @@
   font-size: clamp(40px, 5vw, 68px);
   font-weight: 400;
   letter-spacing: -0.02em;
-  line-height: 1.1;
+  /* 2 × the 36.4px item grid unit, so big rows stay on the vertical grid. */
+  line-height: 72.8px;
 }
 
 .espressoItem .name {
   color: #ffffff;
-  line-height: 0.85;
 }
 
 .espressoItem .price {
@@ -119,7 +115,7 @@
 
 .header {
   font-size: 26px;
-  line-height: 1.3;
+  line-height: 1.4;
   color: #ffffff;
   opacity: 0.6;
   text-decoration: underline;
@@ -133,6 +129,7 @@
   }
   .espressoItem {
     font-size: 54px;
+    line-height: 58.8px;
   }
   .item,
   .modifier {
