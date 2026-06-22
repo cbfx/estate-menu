@@ -23,7 +23,7 @@ export const espresso: Row[] = [
   { price: "+0.75", name: "Almond or oat", kind: "item", squareId: "WSP2S4SPBSDBFJYLAF2W6FIR" },
 ];
 
-// Middle column = first 3 groups; right column = the rest (see Menu.tsx).
+// Middle column = first 2 groups; right column = the rest (see Menu.tsx).
 export const sections: Row[][] = [
   [
     { price: "", name: "Specialty drinks", kind: "header" },
@@ -32,7 +32,6 @@ export const sections: Row[][] = [
     { price: "5.25", name: "Matcha lemonade", kind: "item", squareId: "IRPDAOC6OE36M6WUCXOYTRNW" },
     { price: "5.00", name: "Cold brew cola", kind: "item", squareId: "22RPTA4U7KAEYT3ABXWF2KKH" },
     { price: "5.00", name: "Lime espresso tonic", kind: "item", squareId: "HI5NY4YZMS6ZGIK4PZSW4FY4" },
-    { price: "3.00", name: "Chocolate milk", kind: "item", squareId: "BYPB7OQJTQTDCDVHQCO25N6V" },
   ],
   [
     { price: "2.75", name: "Drip", kind: "item", squareId: "KQNUEL4V55RK747DEPTZAJPD" },
@@ -44,8 +43,7 @@ export const sections: Row[][] = [
     { price: "5.25", name: "Matcha latte", kind: "item", squareId: "WKIP5KJQJMSJ5CCVD5PTMAD6" },
     // Grouped tea line — all teas are 4.50 in POS; mapped to Hibiscus as the representative.
     { price: "4.50", name: "Hibiscus, chamomile, green, or black tea", kind: "item", squareId: "4BD326RIBBU65IG6JC2IBGBK" },
-  ],
-  [
+    { price: "3.00", name: "Chocolate milk", kind: "item", squareId: "BYPB7OQJTQTDCDVHQCO25N6V" },
     // Cold fridge drinks — real Square SKUs (Topo Chico → Seltzer, Mexican coke → Boylan Cane Cola).
     { price: "4.00", name: "Seltzer", kind: "item", squareId: "UCBB73L7UTRQHYJF5TLWLHQM" },
     { price: "4.00", name: "Boylan Cane Cola", kind: "item", squareId: "QHVIX3AIAUCM7NEFA3MAQWRF" },
