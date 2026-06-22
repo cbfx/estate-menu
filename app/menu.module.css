@@ -121,6 +121,14 @@
   text-decoration: underline;
 }
 
+.featuredTitle {
+  font-size: 42px; /* 26 × phi — the step between normal and big text */
+  line-height: 1.4;
+  color: #ffffff;
+  opacity: 0.6;
+  text-decoration: underline;
+}
+
 .featured img {
   display: block;
   width: 100%;
@@ -152,6 +160,9 @@
   }
   .header {
     font-size: 21px;
+  }
+  .featuredTitle {
+    font-size: 34px; /* 21 × phi at projector scale */
   }
 }
 
