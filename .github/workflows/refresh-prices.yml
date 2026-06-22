@@ -12,18 +12,15 @@ jobs:
   refresh:
     runs-on: ubuntu-latest
     environment: production
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+      sha: ${{ steps.commit.outputs.sha }}
     steps:
       - uses: actions/checkout@v4
-
-      - uses: pnpm/action-setup@v4
 
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: pnpm
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
 
       - name: Fetch Square prices
         run: node scripts/fetch-square-prices.mjs
@@ -45,17 +42,12 @@ jobs:
             echo "No price changes."
           fi
 
-      # A push made with GITHUB_TOKEN doesn't trigger deploy.yml, so deploy here.
-      - name: Build
-        if: steps.commit.outputs.changed == 'true'
-        run: pnpm build
-        env:
-          BUILD_ID: ${{ steps.commit.outputs.sha }}
-
-      - name: Deploy to Cloudflare Workers
-        if: steps.commit.outputs.changed == 'true'
-        uses: cloudflare/wrangler-action@v3
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: deploy
+  # A GITHUB_TOKEN push doesn't trigger deploy.yml, so call the shared deploy directly.
+  deploy:
+    needs: refresh
+    if: needs.refresh.outputs.changed == 'true'
+    uses: ./.github/workflows/deploy.yml
+    with:
+      ref: ${{ needs.refresh.outputs.sha }}
+      build_id: ${{ needs.refresh.outputs.sha }}
+    secrets: inherit

@@ -3,6 +3,18 @@ name: Deploy
 on:
   push:
     branches: [main]
+  workflow_call:
+    inputs:
+      ref:
+        description: Commit/ref to build and deploy
+        type: string
+        required: false
+        default: ""
+      build_id:
+        description: BUILD_ID baked into the build (drives kiosk auto-reload)
+        type: string
+        required: false
+        default: ""
 
 jobs:
   deploy:
@@ -10,6 +22,8 @@ jobs:
     environment: production
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.ref || github.sha }}
 
       - uses: pnpm/action-setup@v4
 
@@ -24,7 +38,7 @@ jobs:
       - name: Build
         run: pnpm build
         env:
-          BUILD_ID: ${{ github.sha }}
+          BUILD_ID: ${{ inputs.build_id || github.sha }}
 
       - name: Deploy to Cloudflare Workers
         uses: cloudflare/wrangler-action@v3
