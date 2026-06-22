@@ -1,6 +1,7 @@
 import styles from "../menu.module.css";
 import { espresso, sections, type Row } from "../menu-data";
 import MenuRow from "./MenuRow";
+import Featured from "./Featured";
 import { resolvePrice } from "../prices";
 
 function Section({ rows }: { rows: Row[] }) {
@@ -38,6 +39,7 @@ export default function Menu() {
         {right.map((rows, i) => (
           <Section key={i} rows={rows} />
         ))}
+        <Featured />
       </div>
     </div>
   );

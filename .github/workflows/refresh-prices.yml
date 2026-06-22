@@ -26,10 +26,10 @@ jobs:
 
       - name: Commit if changed
         run: |
-          if [ -n "$(git status --porcelain app/square-snapshot.json)" ]; then
+          if [ -n "$(git status --porcelain app/square-snapshot.json app/featured.json)" ]; then
             git config user.name "prices-bot"
             git config user.email "actions@users.noreply.github.com"
-            git add app/square-snapshot.json
+            git add app/square-snapshot.json app/featured.json
             git commit -m "chore: refresh Square prices"
             git push
           else

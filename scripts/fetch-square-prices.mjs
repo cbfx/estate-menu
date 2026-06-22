@@ -1,7 +1,8 @@
 import { writeFileSync } from "node:fs";
-import { buildSnapshot } from "./square-transform.mjs";
+import { buildSnapshot, findFeatured } from "./square-transform.mjs";
 
 const OUT = new URL("../app/square-snapshot.json", import.meta.url);
+const FEATURED_OUT = new URL("../app/featured.json", import.meta.url);
 
 function baseUrl() {
   return process.env.SQUARE_ENV === "sandbox"
@@ -14,7 +15,7 @@ async function fetchAllObjects(token) {
   let cursor = "";
   do {
     const url = new URL("/v2/catalog/list", baseUrl());
-    url.searchParams.set("types", "ITEM,ITEM_VARIATION,MODIFIER_LIST,MODIFIER");
+    url.searchParams.set("types", "ITEM,ITEM_VARIATION,MODIFIER_LIST,MODIFIER,CATEGORY,IMAGE");
     if (cursor) url.searchParams.set("cursor", cursor);
 
     const res = await fetch(url, { headers: { Authorization: `Bearer ${token}` } });
@@ -41,6 +42,10 @@ async function main() {
   const snapshot = buildSnapshot(objects);
   writeFileSync(OUT, JSON.stringify(snapshot, null, 2) + "\n");
   console.log(`Wrote ${Object.keys(snapshot).length} priced variations to app/square-snapshot.json`);
+
+  const featured = findFeatured(objects);
+  writeFileSync(FEATURED_OUT, JSON.stringify(featured ?? {}, null, 2) + "\n");
+  console.log(featured?.imageUrl ? `Featured: ${featured.name}` : "No featured item/image found");
 }
 
 main().catch((err) => {

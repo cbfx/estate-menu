@@ -1,6 +1,38 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { formatCents, buildSnapshot } from "./square-transform.mjs";
+import { formatCents, buildSnapshot, findFeatured } from "./square-transform.mjs";
+
+test("findFeatured returns the category's item with its first image url", () => {
+  const objects = [
+    { type: "CATEGORY", id: "CAT", category_data: { name: "Espresso of the Day" } },
+    { type: "ITEM", id: "I", item_data: { name: "Brazil", categories: [{ id: "CAT" }], image_ids: ["IMG1", "IMG2"] } },
+    { type: "IMAGE", id: "IMG1", image_data: { url: "https://img/1.jpg" } },
+    { type: "IMAGE", id: "IMG2", image_data: { url: "https://img/2.jpg" } },
+  ];
+  assert.deepEqual(findFeatured(objects), { name: "Brazil", imageUrl: "https://img/1.jpg" });
+});
+
+test("findFeatured matches the category name case-insensitively", () => {
+  const objects = [
+    { type: "CATEGORY", id: "CAT", category_data: { name: "espresso of the day" } },
+    { type: "ITEM", id: "I", item_data: { name: "X", categories: [{ id: "CAT" }], image_ids: ["IMG"] } },
+    { type: "IMAGE", id: "IMG", image_data: { url: "u" } },
+  ];
+  assert.equal(findFeatured(objects)?.imageUrl, "u");
+});
+
+test("findFeatured returns null when the category or item is missing", () => {
+  assert.equal(findFeatured([]), null);
+  assert.equal(findFeatured([{ type: "CATEGORY", id: "C", category_data: { name: "Espresso of the day" } }]), null);
+});
+
+test("findFeatured returns null imageUrl when the item has no image", () => {
+  const objects = [
+    { type: "CATEGORY", id: "CAT", category_data: { name: "Espresso of the day" } },
+    { type: "ITEM", id: "I", item_data: { name: "X", categories: [{ id: "CAT" }] } },
+  ];
+  assert.deepEqual(findFeatured(objects), { name: "X", imageUrl: null });
+});
 
 test("formatCents converts cents to a 2-decimal string", () => {
   assert.equal(formatCents(450), "4.50");
