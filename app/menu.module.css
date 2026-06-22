@@ -121,6 +121,12 @@
   text-decoration: underline;
 }
 
+.featured {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
 .featuredTitle {
   font-size: 26px;
   line-height: 1.4;

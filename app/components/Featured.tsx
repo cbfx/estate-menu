@@ -11,6 +11,7 @@ export default function Featured() {
     <div className={styles.featured}>
       <div className={styles.featuredTitle}>We&apos;re serving {data.name} on espresso today.</div>
       <img src={data.imageUrl} alt={data.name ?? "Espresso of the day"} />
+      <div className={styles.featuredTitle}>Wifi: coffeetime1234</div>
     </div>
   );
 }
