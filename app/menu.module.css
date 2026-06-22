@@ -6,10 +6,6 @@
   align-items: start;
 }
 
-.secondaryColumn {
-  padding-top: 20px;
-}
-
 .espressoSection {
   display: flex;
   flex-direction: column;
