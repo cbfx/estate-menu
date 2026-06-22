@@ -93,6 +93,10 @@
   padding-left: 12px;
 }
 
+.modifier + .espressoItem {
+  margin-top: 8px;
+}
+
 
 .item .name,
 .modifier .name {
