@@ -93,6 +93,11 @@
   line-height: 1.3;
 }
 
+/* Modifiers are sub-items of the drink above — indent them. */
+.modifier {
+  padding-left: 24px;
+}
+
 .item .name,
 .modifier .name {
   color: #ffffff;
