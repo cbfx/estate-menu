@@ -127,6 +127,11 @@
   gap: 36px;
 }
 
+/* Drop the wifi line (last child) one extra break below the image. */
+.featured > :last-child {
+  margin-top: 36px;
+}
+
 .featuredTitle {
   font-size: 26px;
   line-height: 1.4;
