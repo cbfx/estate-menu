@@ -15,8 +15,10 @@ export default function MenuRow({ price, name, kind }: Row) {
     );
   }
 
+  const cls =
+    kind === "addon" ? styles.addon : kind === "modifier" ? styles.modifier : styles.item;
   return (
-    <div className={kind === "addon" ? styles.addon : styles.item}>
+    <div className={cls}>
       <span className={styles.name}>{name}</span>
       <span className={styles.price}>{price}</span>
     </div>
