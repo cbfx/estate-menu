@@ -9,7 +9,7 @@ export default function Featured() {
 
   return (
     <div className={styles.featured}>
-      <div className={styles.featuredTitle}>On bar</div>
+      <div className={styles.featuredTitle}>{data.name}</div>
       <img src={data.imageUrl} alt={data.name ?? "Espresso of the day"} />
     </div>
   );
