@@ -17,10 +17,10 @@ export const espresso: Row[] = [
   { price: "4.75", name: "Latte", kind: "espresso", squareId: "CXJH4O25WCPJAHLGM6R74G5S" },
   // Latte modifiers — hug Latte with no gap.
   { price: "+2.00", name: "Large", kind: "item", squareId: "7DS4ACACAUT7U54WOWMYSF2L" },
-  { price: "+0.50", name: "Breve", kind: "item", squareId: "6QCOWWNBM7OWVF6N2XQHFU4W" },
-  { price: "+0.75", name: "Almond or oat", kind: "item", squareId: "WSP2S4SPBSDBFJYLAF2W6FIR" },
   { price: "+0.50", name: "Honey lavender, mocha, vanilla, kentucky smoke", kind: "item", squareId: "HRNS3NH3KDBKEGF6XKQQFYTS" },
   { price: "4.00", name: "Americano", kind: "espresso", squareId: "QWCMPLSRYO55YWXHIZN6MRV2" },
+  { price: "+0.50", name: "Breve", kind: "item", squareId: "6QCOWWNBM7OWVF6N2XQHFU4W" },
+  { price: "+0.75", name: "Almond or oat", kind: "item", squareId: "WSP2S4SPBSDBFJYLAF2W6FIR" },
 ];
 
 // Middle column = first 3 groups; right column = the rest (see Menu.tsx).
