@@ -95,7 +95,7 @@
 
 /* Modifiers are sub-items of the drink above — indent them. */
 .modifier {
-  padding-left: 24px;
+  padding-left: 12px;
 }
 
 .item .name,
