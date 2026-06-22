@@ -69,7 +69,7 @@
 }
 
 .section {
-  margin-bottom: 48px;
+  margin-bottom: 36.4px; /* 1 grid unit, keeps sections on the vertical grid */
 }
 
 .section:last-child {
@@ -134,6 +134,9 @@
   .item,
   .modifier {
     font-size: 21px;
+  }
+  .section {
+    margin-bottom: 29.4px; /* 1 grid unit at projector scale */
   }
   .addon {
     font-size: 21px;
