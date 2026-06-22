@@ -23,8 +23,13 @@ export const espresso: Row[] = [
   { price: "4.00", name: "Americano", kind: "espresso", squareId: "QWCMPLSRYO55YWXHIZN6MRV2" },
 ];
 
-// Middle column = first 2 groups; right column = the rest (see Menu.tsx).
+// Middle column = first 3 groups; right column = the rest (see Menu.tsx).
 export const sections: Row[][] = [
+  [
+    { price: "", name: "More coffee", kind: "header" },
+    { price: "2.75", name: "Drip", kind: "item", squareId: "KQNUEL4V55RK747DEPTZAJPD" },
+    { price: "4.00", name: "Cold brew", kind: "item", squareId: "WROIDGIGYQUCDVJ22B4SXG2F" },
+  ],
   [
     { price: "", name: "Specialty drinks", kind: "header" },
     { price: "8.00", name: "Espresso old fashioned", kind: "item", squareId: "RXKLK5TTWB37KJPYIIDCGWZS" },
@@ -32,10 +37,6 @@ export const sections: Row[][] = [
     { price: "5.25", name: "Matcha lemonade", kind: "item", squareId: "IRPDAOC6OE36M6WUCXOYTRNW" },
     { price: "5.00", name: "Cold brew cola", kind: "item", squareId: "22RPTA4U7KAEYT3ABXWF2KKH" },
     { price: "5.00", name: "Lime espresso tonic", kind: "item", squareId: "HI5NY4YZMS6ZGIK4PZSW4FY4" },
-  ],
-  [
-    { price: "2.75", name: "Drip", kind: "item", squareId: "KQNUEL4V55RK747DEPTZAJPD" },
-    { price: "4.00", name: "Cold brew", kind: "item", squareId: "WROIDGIGYQUCDVJ22B4SXG2F" },
   ],
   [
     { price: "", name: "Not coffee", kind: "header" },
