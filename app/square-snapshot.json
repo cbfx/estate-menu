@@ -557,6 +557,12 @@
     "amountCents": 1000,
     "currency": "USD"
   },
+  "W7O5R3C6HEQIGQNIZTKHVDE5": {
+    "label": "Honduras - Washed",
+    "price": "18.00",
+    "amountCents": 1800,
+    "currency": "USD"
+  },
   "WKIP5KJQJMSJ5CCVD5PTMAD6": {
     "label": "Matcha Latte",
     "price": "5.25",
