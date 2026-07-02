@@ -192,7 +192,7 @@
     "currency": "USD"
   },
   "FFQLF3F443EHW52PC5IK6CLL": {
-    "label": "Muffin",
+    "label": "Muffin-Crumbs",
     "price": "5.00",
     "amountCents": 500,
     "currency": "USD"
@@ -263,6 +263,12 @@
     "amountCents": 0,
     "currency": "USD"
   },
+  "IEWDETXRNPCYMMV5IP2TW3HE": {
+    "label": "Coffee Cake Loaf",
+    "price": "4.50",
+    "amountCents": 450,
+    "currency": "USD"
+  },
   "IFTK27DWY25Q2NNCI57B72IC": {
     "label": "Blueberry Matcha Latte",
     "price": "6.00",
@@ -270,7 +276,7 @@
     "currency": "USD"
   },
   "IPDH5ISHY2H56UVOQUOXAKJH": {
-    "label": "Muffin",
+    "label": "Muffin-Flourpress",
     "price": "4.75",
     "amountCents": 475,
     "currency": "USD"
@@ -515,6 +521,12 @@
     "amountCents": 75,
     "currency": "USD"
   },
+  "UBXTXNAUOAXEAI4SKT3P2AII": {
+    "label": "Strawberry Danish",
+    "price": "4.00",
+    "amountCents": 400,
+    "currency": "USD"
+  },
   "UCBB73L7UTRQHYJF5TLWLHQM": {
     "label": "Seltzer",
     "price": "4.00",
@@ -600,7 +612,7 @@
     "currency": "USD"
   },
   "X5NHXRGUCAKD7QMRPTY5VRAQ": {
-    "label": "Cheese Danish",
+    "label": "Blueberry Danish",
     "price": "4.00",
     "amountCents": 400,
     "currency": "USD"
