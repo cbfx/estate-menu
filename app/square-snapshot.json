@@ -84,7 +84,7 @@
     "currency": "USD"
   },
   "6WVA24PHUJLJ3K5N4EDX5NLN": {
-    "label": "Sausage and Cheese Croissant Kolache",
+    "label": "Sausage & Cheese Croissant Kolache",
     "price": "7.00",
     "amountCents": 700,
     "currency": "USD"
@@ -129,6 +129,12 @@
     "label": "Guava",
     "price": "+1.00",
     "amountCents": 100,
+    "currency": "USD"
+  },
+  "BLCCH3R6DCGOVFDSBZE5MY76": {
+    "label": "Ham & Cheese Croissant",
+    "price": "6.00",
+    "amountCents": 600,
     "currency": "USD"
   },
   "BYPB7OQJTQTDCDVHQCO25N6V": {
@@ -222,7 +228,7 @@
     "currency": "USD"
   },
   "HH2CTUKRHP7MLJGK7R5WKZ6G": {
-    "label": "oolong",
+    "label": "Oolong",
     "price": "4.50",
     "amountCents": 450,
     "currency": "USD"
