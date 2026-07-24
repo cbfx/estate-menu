@@ -234,7 +234,7 @@
     "currency": "USD"
   },
   "G45MWM3CYKGKOEBR6CPTAWMH": {
-    "label": "Soyrizo And Tofu Scramble ",
+    "label": "Soyrizo And Tofu Scramble",
     "price": "4.50",
     "amountCents": 450,
     "currency": "USD"
@@ -588,9 +588,9 @@
     "currency": "USD"
   },
   "W2H5YOWMFXPMMQDFONPLIRLD": {
-    "label": "Bean And Cheese Taco",
-    "price": "4.00",
-    "amountCents": 400,
+    "label": "Potato, Egg And Cheese Taco",
+    "price": "4.50",
+    "amountCents": 450,
     "currency": "USD"
   },
   "W7O5R3C6HEQIGQNIZTKHVDE5": {
@@ -678,7 +678,7 @@
     "currency": "USD"
   },
   "Z5AEBEP6SFLAYSOIYFZUU7HG": {
-    "label": "Papa La Mexicana ",
+    "label": "Papa La Mexicana",
     "price": "4.25",
     "amountCents": 425,
     "currency": "USD"
