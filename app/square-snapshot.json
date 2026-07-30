@@ -11,6 +11,12 @@
     "amountCents": 450,
     "currency": "USD"
   },
+  "2UE2ZUXVMF5LSFR4ZP2E4JCI": {
+    "label": "Sparkling Agua Fresca Can",
+    "price": "3.00",
+    "amountCents": 300,
+    "currency": "USD"
+  },
   "34XZFBWWBOXRZW6BNOSOIS2I": {
     "label": "Cup of milk",
     "price": "3.00",
@@ -186,7 +192,7 @@
     "currency": "USD"
   },
   "ESOZTN2TADCLERBZEI5VB5O4": {
-    "label": "Fridge Juices/Beverages",
+    "label": "Orange Juice",
     "price": "4.00",
     "amountCents": 400,
     "currency": "USD"
@@ -597,6 +603,12 @@
     "label": "Honduras - Washed",
     "price": "18.00",
     "amountCents": 1800,
+    "currency": "USD"
+  },
+  "WCBH2EFCQARPUHTDNHHTUHCJ": {
+    "label": "Coconut Water/Sparkling",
+    "price": "4.00",
+    "amountCents": 400,
     "currency": "USD"
   },
   "WKIP5KJQJMSJ5CCVD5PTMAD6": {
