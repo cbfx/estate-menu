@@ -569,6 +569,12 @@
     "amountCents": 450,
     "currency": "USD"
   },
+  "ULDM45TSCA3YW2D35RWMJOBY": {
+    "label": "Peru - DECAF",
+    "price": "18.00",
+    "amountCents": 1800,
+    "currency": "USD"
+  },
   "UWBVUDSKMTKOFTXKL57DZFQB": {
     "label": "Add Sugar",
     "price": "+0.00",
