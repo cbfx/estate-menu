@@ -245,12 +245,6 @@
     "amountCents": 500,
     "currency": "USD"
   },
-  "GOODTKFNFAKKF4ACEDHLK3GV": {
-    "label": "Put the Lime in the Coconut Tonic",
-    "price": "6.00",
-    "amountCents": 600,
-    "currency": "USD"
-  },
   "HH2CTUKRHP7MLJGK7R5WKZ6G": {
     "label": "Oolong",
     "price": "4.50",
@@ -261,12 +255,6 @@
     "label": "Less Syrup",
     "price": "+0.00",
     "amountCents": 0,
-    "currency": "USD"
-  },
-  "HI5NY4YZMS6ZGIK4PZSW4FY4": {
-    "label": "Lime Espresso Tonic",
-    "price": "5.00",
-    "amountCents": 500,
     "currency": "USD"
   },
   "HQA46NP7IENW7RB4QCH3JQJN": {
@@ -605,6 +593,12 @@
     "amountCents": 1000,
     "currency": "USD"
   },
+  "VY5P5VP5LCZVZSM5NGGUYR5V": {
+    "label": "Put the lime in the coconut",
+    "price": "6.00",
+    "amountCents": 600,
+    "currency": "USD"
+  },
   "W2H5YOWMFXPMMQDFONPLIRLD": {
     "label": "Potato, Egg And Cheese Taco",
     "price": "4.50",
@@ -693,6 +687,12 @@
     "label": "Green Tea",
     "price": "4.50",
     "amountCents": 450,
+    "currency": "USD"
+  },
+  "YMEXO5QZ5E67BL2RKMHEX7YO": {
+    "label": "Lime Tonic",
+    "price": "5.00",
+    "amountCents": 500,
     "currency": "USD"
   },
   "YW2NCTDTSNJN4QUVVM2KYF6W": {
