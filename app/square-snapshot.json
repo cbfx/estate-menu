@@ -48,9 +48,9 @@
     "currency": "USD"
   },
   "42Y2NOFWXEDKXA6W7RUWVA4D": {
-    "label": "Potato And Egg",
-    "price": "4.00",
-    "amountCents": 400,
+    "label": "Bacon, Egg and Cheese",
+    "price": "4.50",
+    "amountCents": 450,
     "currency": "USD"
   },
   "4BD326RIBBU65IG6JC2IBGBK": {
@@ -241,8 +241,8 @@
   },
   "G45MWM3CYKGKOEBR6CPTAWMH": {
     "label": "Soyrizo And Tofu Scramble",
-    "price": "4.50",
-    "amountCents": 450,
+    "price": "5.00",
+    "amountCents": 500,
     "currency": "USD"
   },
   "HH2CTUKRHP7MLJGK7R5WKZ6G": {
@@ -697,8 +697,8 @@
   },
   "Z5AEBEP6SFLAYSOIYFZUU7HG": {
     "label": "Papa La Mexicana",
-    "price": "4.25",
-    "amountCents": 425,
+    "price": "4.00",
+    "amountCents": 400,
     "currency": "USD"
   },
   "ZASHWJWDHS32P7DPJXPKWGE5": {
