@@ -48,7 +48,7 @@
     "currency": "USD"
   },
   "42Y2NOFWXEDKXA6W7RUWVA4D": {
-    "label": "Bacon, Egg and Cheese",
+    "label": "Bacon, Egg and Cheese Taco",
     "price": "4.50",
     "amountCents": 450,
     "currency": "USD"
@@ -240,7 +240,7 @@
     "currency": "USD"
   },
   "G45MWM3CYKGKOEBR6CPTAWMH": {
-    "label": "Soyrizo And Tofu Scramble",
+    "label": "Soyrizo, Tofu Scramble and Potato Taco",
     "price": "5.00",
     "amountCents": 500,
     "currency": "USD"
