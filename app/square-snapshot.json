@@ -257,6 +257,12 @@
     "amountCents": 0,
     "currency": "USD"
   },
+  "HHSTSVIVONJOV2CSA3A5O3K4": {
+    "label": "Brevity Wholesale",
+    "price": "3.00",
+    "amountCents": 300,
+    "currency": "USD"
+  },
   "HQA46NP7IENW7RB4QCH3JQJN": {
     "label": "Strawberry",
     "price": "+0.50",
