@@ -71,6 +71,12 @@
     "amountCents": 300,
     "currency": "USD"
   },
+  "5BDXMP5V4OXPCKNMSQL7Z3FB": {
+    "label": "Mexico - La Chilana",
+    "price": "18.00",
+    "amountCents": 1800,
+    "currency": "USD"
+  },
   "5THHVX766Q2HRJALJCT3N2BD": {
     "label": "Vanilla",
     "price": "+0.50",
