@@ -725,6 +725,12 @@
     "amountCents": 100,
     "currency": "USD"
   },
+  "ZN3D6AVYYWUNMS64JOYOSFIJ": {
+    "label": "Mexico - Chiapas PO",
+    "price": "4.50",
+    "amountCents": 450,
+    "currency": "USD"
+  },
   "ZN3UOHHQYQMQOEV7PVLQYO7Z": {
     "label": "Scone",
     "price": "3.75",
