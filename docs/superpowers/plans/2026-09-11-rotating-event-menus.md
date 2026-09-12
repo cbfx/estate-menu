@@ -13,7 +13,7 @@
 - Package manager: **pnpm**. Vite must stay **8.x** (vite 7 crashes the vinext CLI).
 - `motion@^13` — import from `motion/react` (supports React 19; verified peer `react ^19`).
 - Windows are **UTC ISO 8601** strings; compare with `Date.now()` (epoch ms). No timezone library.
-- Regular menu phase = **60s** while any event is active; when none active, render regular only (no timers, no transitions).
+- Regular menu phase = **60s** while any event is active; when none active, render regular only (no transitions); a lightweight 60s poll keeps re-checking so an opening window starts cycling on its own.
 - Multiple active events play **back-to-back** in registry order, then one regular phase.
 - Event slide files are `"use client"`. `Menu.tsx` stays a server component.
 - Known pre-existing `tsc` noise: 4 errors (3 in `.next/types/validator.ts`, 1 `Fetcher` in `worker/index.ts`). Gate = no NEW errors beyond those 4.
