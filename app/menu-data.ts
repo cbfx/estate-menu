@@ -16,7 +16,7 @@ export const espresso: Row[] = [
   { price: "4.25", name: "Cappuccino", kind: "espresso", squareId: "PLEYAEQ2GEDFPHIDXJHWEZQU" },
   { price: "4.75", name: "Latte", kind: "espresso", squareId: "CXJH4O25WCPJAHLGM6R74G5S" },
   // Latte modifiers — hug Latte with no gap.
-  { price: "+0.50", name: "Honey lavender, mocha, vanilla, kentucky smoke", kind: "modifier", squareId: "HRNS3NH3KDBKEGF6XKQQFYTS" },
+  { price: "+0.50", name: "Honey lavender, Mocha, Vanilla, Kentucky smoke", kind: "modifier", squareId: "HRNS3NH3KDBKEGF6XKQQFYTS" },
   { price: "+2.00", name: "Large", kind: "modifier", squareId: "7DS4ACACAUT7U54WOWMYSF2L" },
   { price: "+0.50", name: "Breve", kind: "modifier", squareId: "6QCOWWNBM7OWVF6N2XQHFU4W" },
   { price: "+0.75", name: "Almond or oat", kind: "modifier", squareId: "WSP2S4SPBSDBFJYLAF2W6FIR" },

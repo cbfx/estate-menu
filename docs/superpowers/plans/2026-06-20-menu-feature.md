@@ -33,7 +33,7 @@ export const espresso: Row[] = [
   { price: "3.75", name: "Cortado", kind: "espresso" },
   { price: "4.00", name: "Cappuccino", kind: "espresso" },
   { price: "4.50", name: "Latte", kind: "espresso" },
-  { price: "+0.50", name: "Honey lavender, mocha, vanilla, kentucky smoke", kind: "addon" },
+  { price: "+0.50", name: "Honey lavender, Mocha, Vanilla, Kentucky smoke", kind: "addon" },
   { price: "3.50", name: "Americano", kind: "espresso" },
 ];
 
