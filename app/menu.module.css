@@ -147,6 +147,10 @@
   flex: none;
 }
 
+.featured .section {
+  margin-bottom: 0;
+}
+
 .featured img {
   display: block;
   width: 100%;
