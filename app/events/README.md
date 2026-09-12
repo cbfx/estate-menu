@@ -16,13 +16,35 @@ display **rotates** between the regular menu and one or more event slides.
 
 ## Add a slide (3 steps)
 
-**1. Create `app/events/<your-id>.tsx`** exporting a `config` and a default component:
+Each slide owns its markup AND its styles. Create two files:
+
+**1a. `app/events/<your-id>.module.css`** — this slide's own scoped styles:
+
+```css
+.slide {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.headline {
+  font-size: clamp(64px, 12vw, 200px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+```
+
+**1b. `app/events/<your-id>.tsx`** exporting a `config` and a default component, importing its own module:
 
 ```tsx
 "use client";
 
 import type { EventConfig } from "./types";
-import styles from "./events.module.css";
+import styles from "./summer-launch.module.css";
 
 export const config: EventConfig = {
   id: "summer-launch",
@@ -34,11 +56,13 @@ export const config: EventConfig = {
 export default function SummerLaunch() {
   return (
     <div className={styles.slide}>
-      <div className={styles.birthday}>SUMMER MENU IS HERE</div>
+      <div className={styles.headline}>SUMMER MENU IS HERE</div>
     </div>
   );
 }
 ```
+
+There is no shared slide stylesheet — each slide's CSS is scoped to that slide only.
 
 **2. Register it** in `app/events/registry.ts` (array order = back-to-back play order):
 
@@ -84,8 +108,9 @@ durationSeconds: 3,
 
 ## Assets / bigger slides
 
-A slide is a flat file until it needs its own assets or CSS. When it does, promote it to a
-folder with an `index.tsx` (same exports) and keep its image/CSS alongside:
+A slide is a pair of flat files (`.tsx` + `.module.css`) until it needs its own image assets.
+When it does, promote it to a folder with an `index.tsx` (same exports) and keep its
+image/CSS alongside:
 
 ```
 app/events/summer-launch/
