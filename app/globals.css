@@ -4,14 +4,19 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
 body {
   font-family: "DM Sans", sans-serif;
   background: #000000;
   color: #ffffff;
   line-height: 1.618;
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16px;
 }
