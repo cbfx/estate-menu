@@ -127,15 +127,28 @@
   gap: 36px;
 }
 
-/* Drop the wifi line (last child) one extra break below the image. */
-.featured > :last-child {
-  margin-top: 36px;
-}
-
 .featuredTitle {
   font-size: 26px;
   line-height: 1.4;
   color: #ffffff;
+}
+
+/* Wi-Fi line — between item (26px) and Espresso (68px): 26 × phi. */
+.wifi {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  font-size: 42px;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.wifiIcon {
+  flex: none;
+}
+
+.featured .section {
+  margin-bottom: 0;
 }
 
 .featured img {
@@ -143,8 +156,9 @@
   width: 100%;
   height: 360px;
   object-fit: contain;
-  object-position: left top;
+  object-position: center top;
 }
+
 
 /* Projector / XGA (1024×768) and similar: step the whole scale down a notch,
    keeping the golden ratio (regular 21 → espresso ~54 = 21 × phi^2). */
@@ -174,6 +188,9 @@
   }
   .featuredTitle {
     font-size: 21px;
+  }
+  .wifi {
+    font-size: 34px; /* 21 × phi at projector scale */
   }
 }
 
