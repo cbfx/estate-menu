@@ -16,7 +16,7 @@ export default function HappyBirthdayRaja() {
     <div className={styles.slide}>
       <div className={styles.copy}>
         <div className={styles.headline}>Happy birthday, Raja!</div>
-        <div className={styles.subtext}>Enjoy drip coffee and pup cups on us!</div>
+        <div className={styles.subtext}>Enjoy cold brew, drip, and pup cups on us! Thanks for coming!</div>
       </div>
       <div className={styles.portrait}>
         <img src={rajaImg.src} alt="Raja" />
