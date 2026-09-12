@@ -133,6 +133,20 @@
   color: #ffffff;
 }
 
+/* Wi-Fi line — between item (26px) and Espresso (68px): 26 × phi. */
+.wifi {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  font-size: 42px;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.wifiIcon {
+  flex: none;
+}
+
 .featured img {
   display: block;
   width: 100%;
@@ -170,6 +184,9 @@
   }
   .featuredTitle {
     font-size: 21px;
+  }
+  .wifi {
+    font-size: 34px; /* 21 × phi at projector scale */
   }
 }
 
