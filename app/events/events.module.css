@@ -1,0 +1,15 @@
+.slide {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.birthday {
+  font-size: clamp(64px, 12vw, 200px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
