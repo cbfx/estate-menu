@@ -6,6 +6,11 @@
   align-items: start;
 }
 
+/* Let tracks size by their fr, not by non-wrapping content (marquee/image). */
+.container > * {
+  min-width: 0;
+}
+
 .espressoSection {
   display: flex;
   flex-direction: column;
@@ -152,7 +157,7 @@
 }
 
 .nowPlaying {
-  font-family: "DotGothic16", monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-size: 26px;
   line-height: 1.4;
   color: #ffffff;
