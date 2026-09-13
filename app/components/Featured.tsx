@@ -1,5 +1,6 @@
 import styles from "../menu.module.css";
 import featured from "../featured.json";
+import NowPlaying from "./NowPlaying";
 
 type FeaturedData = { name?: string | null; imageUrl?: string | null };
 
@@ -28,6 +29,7 @@ export default function Featured() {
         </svg>
         coffeetime1234
       </div>
+      <NowPlaying />
       <div className={styles.section}>
         <div className={styles.header}>On espresso bar:</div>
         <div className={styles.items}>

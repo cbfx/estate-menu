@@ -151,6 +151,32 @@
   margin-bottom: 0;
 }
 
+.nowPlaying {
+  font-family: "DotGothic16", monospace;
+  font-size: 26px;
+  line-height: 1.4;
+  color: #ffffff;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.nowPlayingTrack {
+  display: inline-block;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 18s linear infinite;
+}
+
+.nowPlayingTrack span {
+  padding-right: 3ch; /* gap between the repeated copies */
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
 .featured img {
   display: block;
   width: 100%;
@@ -191,6 +217,9 @@
   }
   .wifi {
     font-size: 34px; /* 21 × phi at projector scale */
+  }
+  .nowPlaying {
+    font-size: 21px;
   }
 }
 
