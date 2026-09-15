@@ -6,6 +6,11 @@
   align-items: start;
 }
 
+/* Let tracks size by their fr, not by non-wrapping content (marquee/image). */
+.container > * {
+  min-width: 0;
+}
+
 .espressoSection {
   display: flex;
   flex-direction: column;
@@ -121,10 +126,11 @@
   text-decoration: underline;
 }
 
+/* Golden spacing scale: 14 → 23 → 37 (each ×phi). */
 .featured {
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: 0;
 }
 
 .featuredTitle {
@@ -147,14 +153,46 @@
   flex: none;
 }
 
+/* Marquee hugs the wifi label (tight base step). */
+.nowPlaying {
+  margin-top: 14px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 26px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: #ffb000;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+/* Larger golden gaps separate the info cluster, the on-bar section, and the image. */
 .featured .section {
+  margin-top: 37px;
   margin-bottom: 0;
+}
+
+.nowPlayingTrack {
+  display: inline-block;
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 18s linear infinite;
+}
+
+.nowPlayingTrack span {
+  padding-right: 3ch; /* gap between the repeated copies */
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
 
 .featured img {
   display: block;
   width: 100%;
   height: 360px;
+  margin-top: 37px;
   object-fit: contain;
   object-position: center top;
 }
@@ -191,6 +229,9 @@
   }
   .wifi {
     font-size: 34px; /* 21 × phi at projector scale */
+  }
+  .nowPlaying {
+    font-size: 21px;
   }
 }
 
