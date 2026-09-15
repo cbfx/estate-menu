@@ -31,7 +31,7 @@ export default function NowPlaying() {
 
   const text =
     state.playing && state.title
-      ? `Now playing: ${state.title} — ${state.artist}`
+      ? `Now playing: ${state.artist} — ${state.title}`
       : IDLE_TEXT;
 
   return (
