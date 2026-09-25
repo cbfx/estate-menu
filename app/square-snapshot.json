@@ -89,6 +89,12 @@
     "amountCents": 475,
     "currency": "USD"
   },
+  "62OQR43T7X52Q5SU4X5DACAM": {
+    "label": "The Great Pumpkin",
+    "price": "5.75",
+    "amountCents": 575,
+    "currency": "USD"
+  },
   "6LWSVDYKVXX757SDDCN5WXD5": {
     "label": "notcool sticker 2 for 5",
     "price": "5.00",
@@ -173,6 +179,12 @@
     "amountCents": 200,
     "currency": "USD"
   },
+  "CPJ6JQEFMN6N2ZIIDSTTTRLL": {
+    "label": "Pumpkin Spice",
+    "price": "+1.50",
+    "amountCents": 150,
+    "currency": "USD"
+  },
   "CXJH4O25WCPJAHLGM6R74G5S": {
     "label": "Latte",
     "price": "4.75",
@@ -189,6 +201,12 @@
     "label": "Kentucky Smoke",
     "price": "+0.50",
     "amountCents": 50,
+    "currency": "USD"
+  },
+  "DVP62T6YHUMY657DD754LM3B": {
+    "label": "Brown Sugar Ginger",
+    "price": "+1.00",
+    "amountCents": 100,
     "currency": "USD"
   },
   "EKQNDRV7NUTWF4HWB4PEVKPC": {
@@ -327,12 +345,6 @@
     "label": "Banana Mocha Bread for here",
     "price": "4.50",
     "amountCents": 450,
-    "currency": "USD"
-  },
-  "K34QHUYXI7FR45KYLSY6ICFV": {
-    "label": "Blueberry",
-    "price": "+1.00",
-    "amountCents": 100,
     "currency": "USD"
   },
   "K3IZJC7PWLXFZ3GA72SVARMU": {
@@ -587,6 +599,12 @@
     "amountCents": 1800,
     "currency": "USD"
   },
+  "UM7IU7MOJ3CHAAUFVZFDF3FJ": {
+    "label": "Apple Picking",
+    "price": "5.50",
+    "amountCents": 550,
+    "currency": "USD"
+  },
   "UWBVUDSKMTKOFTXKL57DZFQB": {
     "label": "Add Sugar",
     "price": "+0.00",
@@ -671,6 +689,12 @@
     "amountCents": 0,
     "currency": "USD"
   },
+  "WWEKLY7V2BG2OL7FLHTYES3P": {
+    "label": "Falling Leaves",
+    "price": "5.75",
+    "amountCents": 575,
+    "currency": "USD"
+  },
   "X5NHXRGUCAKD7QMRPTY5VRAQ": {
     "label": "Blueberry Danish",
     "price": "4.00",
@@ -693,6 +717,18 @@
     "label": "Dirty Chai Latte",
     "price": "6.50",
     "amountCents": 650,
+    "currency": "USD"
+  },
+  "Y7O6EGIIQ3DGKIJP3O64Z74F": {
+    "label": "Smashing Pumpkins",
+    "price": "5.50",
+    "amountCents": 550,
+    "currency": "USD"
+  },
+  "YBRY3QXLE3B3IOXHWZ2ST2IY": {
+    "label": "Apple Crisp",
+    "price": "+1.00",
+    "amountCents": 100,
     "currency": "USD"
   },
   "YESV5RXGD7ZC2354NX4YXVC3": {
@@ -747,6 +783,12 @@
     "label": "Poptart",
     "price": "4.75",
     "amountCents": 475,
+    "currency": "USD"
+  },
+  "ZXI34BHWXAUYBWTSSGBAVT6V": {
+    "label": "Pumpkin Spice",
+    "price": "+1.00",
+    "amountCents": 100,
     "currency": "USD"
   }
 }
