@@ -216,7 +216,7 @@
     "currency": "USD"
   },
   "ESOZTN2TADCLERBZEI5VB5O4": {
-    "label": "Orange Juice",
+    "label": "Fridge Juice/Drink",
     "price": "4.00",
     "amountCents": 400,
     "currency": "USD"
@@ -265,6 +265,12 @@
   },
   "G45MWM3CYKGKOEBR6CPTAWMH": {
     "label": "Soyrizo, Tofu Scramble and Potato Taco",
+    "price": "5.00",
+    "amountCents": 500,
+    "currency": "USD"
+  },
+  "GNDWNXP3IY46PJPT3J5FZ3TJ": {
+    "label": "Slow Sunday button 2 for $5",
     "price": "5.00",
     "amountCents": 500,
     "currency": "USD"
@@ -423,6 +429,12 @@
     "label": "Hot",
     "price": "+0.00",
     "amountCents": 0,
+    "currency": "USD"
+  },
+  "O5EKHYIHMKXURC73MBWUCKNH": {
+    "label": "Slow Sunday button 1 for $3",
+    "price": "3.00",
+    "amountCents": 300,
     "currency": "USD"
   },
   "ODVXVWL5UR5GUAI567HC3ECN": {
