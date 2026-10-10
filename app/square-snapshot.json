@@ -557,6 +557,12 @@
     "amountCents": 2000,
     "currency": "USD"
   },
+  "T2LDWQM7X4YBWPRRXFGL6J5A": {
+    "label": "Slow Sunday Stickers 1 for $3",
+    "price": "3.00",
+    "amountCents": 300,
+    "currency": "USD"
+  },
   "T6BJNZYWDYJJBQF5SA5RVMX6": {
     "label": "El Salvador Washed",
     "price": "4.50",
@@ -723,6 +729,12 @@
     "label": "Tequila Almond Croissant",
     "price": "5.25",
     "amountCents": 525,
+    "currency": "USD"
+  },
+  "XKKHZ7EW7S4JMISSFQBLVONP": {
+    "label": "Slow Sunday Stickers 2 for $5",
+    "price": "5.00",
+    "amountCents": 500,
     "currency": "USD"
   },
   "Y52DQL23DXGUFYQUDFYST3UB": {
