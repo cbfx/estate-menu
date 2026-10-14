@@ -167,12 +167,6 @@
     "amountCents": 300,
     "currency": "USD"
   },
-  "CGR755GMGRIRUGUJGYFAWIEQ": {
-    "label": "Car Shirt",
-    "price": "30.00",
-    "amountCents": 3000,
-    "currency": "USD"
-  },
   "CLHSWUM5GCFXQK53DOJKI3BF": {
     "label": "Extra Matcha",
     "price": "+2.00",
@@ -365,6 +359,12 @@
     "amountCents": 400,
     "currency": "USD"
   },
+  "KJATNEDJ26JWXU2G7QTWFILV": {
+    "label": "Macc Shirt",
+    "price": "25.00",
+    "amountCents": 2500,
+    "currency": "USD"
+  },
   "KQNUEL4V55RK747DEPTZAJPD": {
     "label": "Drip Coffee",
     "price": "2.75",
@@ -461,16 +461,10 @@
     "amountCents": 450,
     "currency": "USD"
   },
-  "PJSBMGYG65DSLXG363E4HELX": {
-    "label": "Kids Shirt",
-    "price": "15.00",
-    "amountCents": 1500,
-    "currency": "USD"
-  },
   "PKUHTPUCF7X76TBV4UJJTDBL": {
     "label": "Extract Tee",
-    "price": "20.00",
-    "amountCents": 2000,
+    "price": "25.00",
+    "amountCents": 2500,
     "currency": "USD"
   },
   "PLEYAEQ2GEDFPHIDXJHWEZQU": {
@@ -597,12 +591,6 @@
     "label": "Seltzer",
     "price": "4.00",
     "amountCents": 400,
-    "currency": "USD"
-  },
-  "UKG4Q5ZAKLHTM7NOYLHPASQV": {
-    "label": "Fiesta Tee",
-    "price": "20.00",
-    "amountCents": 2000,
     "currency": "USD"
   },
   "ULACSAIO66VBRENJ6YT7ERXX": {
