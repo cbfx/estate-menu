@@ -5,6 +5,12 @@
     "amountCents": 500,
     "currency": "USD"
   },
+  "2EUSOBWRRHQK5E4NCOYMEM27": {
+    "label": "large",
+    "price": "+2.00",
+    "amountCents": 200,
+    "currency": "USD"
+  },
   "2LD6AXKXZLICAF33OBCC2ZIL": {
     "label": "Orange Chai",
     "price": "4.50",
