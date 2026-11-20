@@ -29,6 +29,12 @@
     "amountCents": 300,
     "currency": "USD"
   },
+  "3AG72KVAVNFNE3B3SBCYSUOP": {
+    "label": "El Salvador / Honduras blend",
+    "price": "19.00",
+    "amountCents": 1900,
+    "currency": "USD"
+  },
   "3AZA7XMDZG4M4SFYPXNXQHN2": {
     "label": "Honduras - Honey Process",
     "price": "19.00",
