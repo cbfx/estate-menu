@@ -570,7 +570,7 @@
     "currency": "USD"
   },
   "T6BJNZYWDYJJBQF5SA5RVMX6": {
-    "label": "El Salvador Washed",
+    "label": "El Salvador Washed PO",
     "price": "4.50",
     "amountCents": 450,
     "currency": "USD"
@@ -621,6 +621,12 @@
     "label": "Apple Picking",
     "price": "5.50",
     "amountCents": 550,
+    "currency": "USD"
+  },
+  "UOFAPMG7C4SUEDNJKWQ2YEH7": {
+    "label": "Estate Coffee Co Mug(Blue)",
+    "price": "20.00",
+    "amountCents": 2000,
     "currency": "USD"
   },
   "UWBVUDSKMTKOFTXKL57DZFQB": {
